@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	display: block;
+	box-sizing: border-box; /*de border wordt meegerekend in breedte etc */
+	overflow-x: hidden; /*zodat er geen scrollbar onder verschijnt */
+	xfont-family: 'Quicksand', sans-serif;
+	font-family: 'Poiret One', cursive;
+}
+
+.nav {
+	text-align: center;
+	border: 1px solid black; /* verandert height */
+	background-color: white;
+	display: fixed;
+}
+
+.nav ul li {
+	color: orange;
+	xborder: 1px solid red;
+	display: inline-block;
+	text-align: center;
+	padding: 0 5%;
+	margin: 0;
+}
+
+
+
+.homebackground {
+	border: 1px solid black; /* verandert height */
+	display: block;
+	margin: 0;
+	xmargin: 0 0 -142px 0;
+	padding: 0;
+	background: url(watershell.jpg) no-repeat center center;
+	xwidth: 120%;
+	xheight: 100%;
+	background-size: cover;
+	
+}
+
+#spreuk {
+	font-size: 65px;
+	xborder: 1px solid red;
+	margin: 8% 30% 30% 10%;
+	padding: 0;
+	color: white;
+}
+
+.footer {
+	color: white;
+	background-color: #ff8000;
+	xfloat: left;
+	xclear: both;
+	width: 100%;
+	xheight: 142px;
+	xborder: 1px solid red;
+	margin: 0;
+	padding: 0 0 0 20%;
+	xposition: fixed;
+
+}
+
+.footer div {
+	xborder: 1px solid purple;
+	display: inline-block;
+	margin: 0;
+	padding: 0 10%;
+
+}
+
+/*
+sticky footer from css-tricks.com
+.page-wrap {
+  min-height: 100%;
+  xequal to footer height
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}*/
