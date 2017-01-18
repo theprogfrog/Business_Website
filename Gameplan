@@ -1,11 +1,14 @@
 Gameplan Business Website
 
-Brainstorm:
-Misschien op basis van instagram (Toska)
-Misschien site om iets te organiseren
+Pagina's:
+1. home
+2. gallery
+3. treatments
+4. Subscription
+contact onder in footer
+naam: Spa wellness
 
-Manier om catergorieën op homepage te zetten.
-
+Geen framework, wel jQuery library en flexbox.
 
 
 Gameplan:
@@ -13,6 +16,13 @@ Gameplan:
 2. Taakverdeling maken
 3. 
 
+Ruimte door panels
+Menu spreiden/symmetrie
+Kleurschema:
+- goud
+- zwart
+- wit
+- groen
 
 
 Vereisten:
