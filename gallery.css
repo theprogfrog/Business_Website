@@ -7,12 +7,27 @@ body {
 	font-family: 'Poiret One', cursive;
 }
 
-/*Navbar start*/
+/*navbar start*/
 .nav {
+	color: orange;
 	text-align: center;
-	border: 1px solid black; /* verandert height */
+	xborder: 1px solid black; /* verandert height */
 	background-color: white;
 	display: fixed;
+}
+
+.nav a {
+	text-decoration: none;
+	color: orange;
+}
+
+.nav a:hover {
+	color: lightblue;
+}
+
+.nav a:visited {
+	text-decoration: none;
+	color: white;
 }
 
 .nav ul li {
@@ -23,7 +38,9 @@ body {
 	padding: 0 5%;
 	margin: 0;
 }
+
 /*Navbar end*/
+
 .gallery {
 	background-color: #ffff99;
 }
@@ -40,21 +57,24 @@ body {
 	flex: 1;
 	max-width: 300px;
 	max-height: 200px;
-	margin: 10px;
+	margin: 15px;
 }
 
 /*Footer start*/
 .footer {
 	color: white;
+	font-size: 24px;
+	font-weight: bold;
 	background-color: #ff8000;
 	xfloat: left;
 	xclear: both;
 	width: 100%;
-	xheight: 142px;
+	height: 100px;
 	xborder: 1px solid red;
 	margin: 0;
 	padding: 0 0 0 20%;
 	xposition: fixed;
+	line-height: 0;
 
 }
 
