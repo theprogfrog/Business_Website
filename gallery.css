@@ -1,0 +1,83 @@
+body {
+	margin: 0;
+	display: block;
+	box-sizing: border-box; /*de border wordt meegerekend in breedte etc */
+	overflow-x: hidden; /*zodat er geen scrollbar onder verschijnt */
+	xfont-family: 'Quicksand', sans-serif;
+	font-family: 'Poiret One', cursive;
+}
+
+/*Navbar start*/
+.nav {
+	text-align: center;
+	border: 1px solid black; /* verandert height */
+	background-color: white;
+	display: fixed;
+}
+
+.nav ul li {
+	color: orange;
+	xborder: 1px solid red;
+	display: inline-block;
+	text-align: center;
+	padding: 0 5%;
+	margin: 0;
+}
+/*Navbar end*/
+.gallery {
+	background-color: #ffff99;
+}
+
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-direction: row
+}
+
+.photo {
+	flex: 1;
+	max-width: 300px;
+	max-height: 200px;
+	margin: 5px;
+}
+
+/*Footer start*/
+.footer {
+	color: white;
+	background-color: #ff8000;
+	xfloat: left;
+	xclear: both;
+	width: 100%;
+	xheight: 142px;
+	xborder: 1px solid red;
+	margin: 0;
+	padding: 0 0 0 20%;
+	xposition: fixed;
+
+}
+
+.footer div {
+	xborder: 1px solid purple;
+	display: inline-block;
+	margin: 0;
+	padding: 0 10%;
+
+}
+/*Footer end*/
+
+/*
+sticky footer from css-tricks.com
+.page-wrap {
+  min-height: 100%;
+  xequal to footer height
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}*/
