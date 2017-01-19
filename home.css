@@ -8,10 +8,25 @@ body {
 }
 
 .nav {
+	color: orange;
 	text-align: center;
-	border: 1px solid black; /* verandert height */
+	xborder: 1px solid black; /* verandert height */
 	background-color: white;
 	display: fixed;
+}
+
+.nav a {
+	text-decoration: none;
+	color: orange;
+}
+
+.nav a:hover {
+	color: lightblue;
+}
+
+.nav a:visited {
+	text-decoration: none;
+	color: white;
 }
 
 .nav ul li {
@@ -24,16 +39,15 @@ body {
 }
 
 
-
 .homebackground {
-	border: 1px solid black; /* verandert height */
+	xborder: 1px solid black; /* verandert height */
 	display: block;
 	margin: 0;
 	xmargin: 0 0 -142px 0;
 	padding: 0;
 	background: url(watershell.jpg) no-repeat center center;
-	xwidth: 120%;
-	xheight: 100%;
+	width: 120%;
+	height: 80%;
 	background-size: cover;
 	
 }
@@ -41,22 +55,25 @@ body {
 #spreuk {
 	font-size: 65px;
 	xborder: 1px solid red;
-	margin: 8% 30% 30% 10%;
-	padding: 0;
+	margin: 0 0 0 0;
+	padding: 5% 0 0 10%;
 	color: white;
 }
 
 .footer {
 	color: white;
+	font-size: 24px;
+	font-weight: bold;
 	background-color: #ff8000;
 	xfloat: left;
 	xclear: both;
 	width: 100%;
-	xheight: 142px;
+	height: 100px;
 	xborder: 1px solid red;
 	margin: 0;
 	padding: 0 0 0 20%;
 	xposition: fixed;
+	line-height: 0;
 
 }
 
