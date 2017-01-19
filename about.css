@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	display: block;
+	box-sizing: border-box; /*de border wordt meegerekend in breedte etc */
+	overflow-x: hidden; /*zodat er geen scrollbar onder verschijnt */
+	xfont-family: 'Quicksand', sans-serif;
+	font-family: 'Poiret One', cursive;
+}
+
+/*navbar start*/
+.nav {
+	color: orange;
+	text-align: center;
+	xborder: 1px solid black; /* verandert height */
+	background-color: white;
+	display: fixed;
+}
+
+.nav a {
+	text-decoration: none;
+	color: orange;
+}
+
+.nav a:hover {
+	color: lightblue;
+}
+
+.nav a:visited {
+	text-decoration: none;
+	color: orange;
+}
+
+.nav ul li {
+	color: orange;
+	xborder: 1px solid red;
+	display: inline-block;
+	text-align: center;
+	padding: 0 5%;
+	margin: 0;
+}
+/*navbar end*/
+
+/*photo start*/
+.aboutPhoto {
+	xborder: 1px solid black; /* verandert height */
+	display: block;
+	margin: 0;
+	xmargin: 0 0 -142px 0;
+	padding: 0;
+	background: url(building.jpg) no-repeat center center;
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+}
+/*photo end*/
+
+/*about text*/
+.about {
+	text-align: center;
+	padding: 0px 75px;
+}
+/*about text end*/
+
+/*footer start*/
+.footer {
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #ff8000;
+	xfloat: left;
+	xclear: both;
+	width: 100%;
+	height: 100px;
+	xborder: 1px solid red;
+	margin: 0;
+	padding: 0 0 0 20%;
+	xposition: fixed;
+	line-height: 0;
+
+}
+
+.footer div {
+	xborder: 1px solid purple;
+	display: inline-block;
+	margin: 0;
+	padding: 0 10%;
+
+}
+/*footer end*/
