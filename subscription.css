@@ -117,6 +117,11 @@ h1 {
 	
 }
 
+#introductiontext {
+	text-align: center;
+	padding-right: 155px;
+	padding-left: 155px;
+}
 
 a { color: inherit; }
 
@@ -130,6 +135,44 @@ a { color: inherit; }
     display: inline-block;
     font-size: 16px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Gedownload van https://codyhouse.co/gem/back-to-top/  */
+
+.cd-top img {
+	width: 15%;
+}
+
+.cd-top {
+	position: fixed;
+	bottom: 30px; /* bottom & right zijn nodig om fixed button te zien. float alleen werkt niet, ik weet alleen niet waarom. */
+	right: -460px; /* waarom in de min hier? ws vanwege bootstrap columns */
+	visibility: hidden;
+	opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+
+}
+
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
 }
 
 
