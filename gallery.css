@@ -38,9 +38,9 @@ body {
 	padding: 0 5%;
 	margin: 0;
 }
-
 /*Navbar end*/
 
+/*Gallery start*/
 .gallery {
 	background-color: #ffff99;
 }
@@ -57,8 +57,10 @@ body {
 	flex: 1;
 	max-width: 300px;
 	max-height: 200px;
-	margin: 15px;
+	margin: 15px 30px;
+	border-radius: 8px;
 }
+/*Gallery end*/
 
 /*Footer start*/
 .footer {
