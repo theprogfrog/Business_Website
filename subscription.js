@@ -79,6 +79,8 @@ $(document).keyup(function(e) {
   }
 });
 
+});
+
 
 
 	/* Doesn't work at all for me. Could it be because of the footer that I have integrated? It did work for Toska, so not sure why it doesn't
