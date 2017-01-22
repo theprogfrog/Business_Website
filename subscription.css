@@ -96,7 +96,6 @@ body {
 .h2headers-groen {
 	background-color: #08a830; 
 	color: #ffffff;
-
 }
 
 .h2headers-oranje {
@@ -125,55 +124,111 @@ h1 {
 
 a { color: inherit; }
 
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+
+
+/* Show Button */
+
+.show{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 150px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -75px;
+  background: #e74c3c;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  border-bottom: 2px solid #c0392b;
+  cursor: pointer;
+  
+  &:hover{
+    background: #c0392b;
+  }
+  
+  &:active{
+    transform: scale(0.9);
+  }
 }
 
-/* Gedownload van https://codyhouse.co/gem/back-to-top/  */
+/* Close Button */
 
-.cd-top img {
-	width: 15%;
-}
-
-.cd-top {
-	position: fixed;
-	bottom: 30px; /* bottom & right zijn nodig om fixed button te zien. float alleen werkt niet, ik weet alleen niet waarom. */
-	right: -460px; /* waarom in de min hier? ws vanwege bootstrap columns */
-	visibility: hidden;
-	opacity: 0;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
+.close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 20px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
 
 }
 
+/* The mask */
 
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-  -moz-transition: opacity .3s 0s, visibility 0s 0s;
-  transition: opacity .3s 0s, visibility 0s 0s;
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.8);
+  z-index: 50;
+  visibility: hidden;
+  
+  opacity: 0;
+  
+  transition: 0.7s;
 }
-.cd-top.cd-is-visible {
-  /* the button becomes visible */
+
+/* Modal */
+
+.modal{
+ 	text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  position: fixed;
+  top: 73%;
+  left: 63%;
+  width: 150px;
+  height: 40px;
+  margin-left: -200px;
+  margin-top: -150px;
+  background: #bdc3c7;
+  z-index: 100;
+  visibility: hidden;
+  
+  opacity: 0;
+  
+  transition: 0.5s ease-out;
+  
+  transform: translateY(45px);
+}
+
+/* Class Active */
+
+.active{
   visibility: visible;
   opacity: 1;
 }
-.cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5;
-}
-.no-touch .cd-top:hover {
-  background-color: #e86256;
+
+/* When active class is added, that affects the modal class */
+
+.active + .modal{
+  visibility: visible;
   opacity: 1;
+  transform: translateY(0);
 }
+
+
+
+
+
+
 
 
 .footer {
