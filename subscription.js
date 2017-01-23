@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
 
-/* This is for <h1> Should show one sentence at a time that changes over time. Doesn't do that right now. When I try it on CodePen, 
-it works perfectly, but not here. */
+/* This is for <h1> Should show one sentence at a time that changes over time.  */
 
 
 	(function($){
@@ -49,8 +48,7 @@ it works perfectly, but not here. */
 
 
 
-/* this is for the button "click for price". When you click on it, a modal should appear with the price. Doesn't work. Not sure why. 
-When I try it on CodePen it does work. Not sure what I am doing wrong? */
+/* this is for the button "click for price". When you click on it, a modal should appear with the price.  */
 
 
 jQuery(document).ready(function($){
@@ -73,43 +71,18 @@ $(".close, .mask").on("click", function(){
   closeModal();
 });
 
-$(document).keyup(function(e) {
-  if (e.keyCode == 27) {
+	$(document).keyup(function(e) {
+ 	 if (e.keyCode == 27) {
     closeModal();
-  }
-});
-
-});
-
-
-
-	/* Doesn't work at all for me. Could it be because of the footer that I have integrated? It did work for Toska, so not sure why it doesn't
-	work for me? Not so important, will try it when I have fixed the other problems.
-
-	// browser window scroll (in pixels) after which the "back to top" link is shown
-	var offset = 300,
-		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-		offset_opacity = 1200,
-		//duration of the top scrolling animation (in ms)
-		scroll_top_duration = 700,
-		//grab the "back to top" link
-		$back_to_top = $('.cd-top');
-
-	//hide or show the "back to top" link
-	$(window).scroll(function(){
-		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-		if( $(this).scrollTop() > offset_opacity ) { 
-			$back_to_top.addClass('cd-fade-out');
-		}
+ 	 }
 	});
 
-	//smooth scroll to top
-	$back_to_top.on('click', function(event){
-		event.preventDefault();
-		$('body,html').animate({
-			scrollTop: 0 ,
-		 	}, scroll_top_duration
-		);
-	});
+});
 
-	*/ 
+function myFunction() {
+    document.getElementById("gallerylist").style.display = "block";
+}
+
+function myFunction2() {
+	document.getElementById("gallerylist").style.display = "none";
+}

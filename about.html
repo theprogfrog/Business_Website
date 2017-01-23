@@ -8,15 +8,24 @@
 </head>
 <body>
 <!-- nav -->
-	<div class="nav">
-		<ul>
-			<li><a href="#"><h2>Gallery</h2></a></li>
-			<li><a href="#"><h2>About</h2></a></li>
-			<li><a href="#"><h1>SPA WELLNESS</h1></a></li>
-			<li><a href="#"><h2>Treatments</h2></a></li>
-			<li><a href="#"><h2>Subscriptions</h2></a></li>
-		</ul>
+	<div class="navimg">
+		<img src="navshell.png">
 	</div>
+
+<div class="navlist">
+	<ul>
+		<li class="gallery"><a href="gallery.html" onmouseover="myFunction()" onmouseout="setTimeout(myFunction2, 3000);"><h2 >Gallery</h2></a></li>
+			<ul id="gallerylist">
+				<li><a href="#">Pools</a></li>
+				<li><a href="#">Restaurant</a></li>
+				<li><a href="#">Garden</a></li>
+			</ul>
+		<li><a href="about.html"><h2>About</h2></a></li>
+		<li><a href="index.html"><h1>SPA WELLNESS</h1></a></li>
+		<li><a href="treatments.html"><h2>Treatments</h2></a></li>
+		<li><a href="subscription.html"><h2>Subscriptions</h2></a></li>
+	</ul>	
+</div>
 <!-- end nav -->
 
 <!-- photo -->
@@ -49,5 +58,6 @@
 		</div>
 	</div>
 <!-- end footer -->
+<script type="text/javascript" src="home.js"></script>
 </body>
 </html>

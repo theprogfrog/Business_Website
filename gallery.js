@@ -1,5 +1,3 @@
-
-
 // Ugly code, but for now the only way it will work... 
 // This functions make text hover over the images
 $(document).ready(function(){
@@ -40,3 +38,12 @@ $(document).ready(function(){
 		$('#text6').fadeOut(800);
 	});
 });
+
+
+function myFunction() {
+    document.getElementById("gallerylist").style.display = "block";
+}
+
+function myFunction2() {
+	document.getElementById("gallerylist").style.display = "none";
+}

@@ -1,80 +1,75 @@
 body {
+  margin: 0;
+  display: block;
+  box-sizing: border-box; /*de border wordt meegerekend in breedte etc */
+  overflow-x: hidden; /*zodat er geen scrollbar onder verschijnt */
+  font-family: 'Poiret One', cursive;
+  max-width: 100%;
 
-	margin: 0;
+}
 
-	display: block;
+/*Nog een manier vinden om h1 Spa Wellness & navimg gecentered te houden, met window resize*/
 
-	box-sizing: border-box; /*de border wordt meegerekend in breedte etc */
 
-	overflow-x: hidden; /*zodat er geen scrollbar onder verschijnt */
-
-	xfont-family: 'Quicksand', sans-serif;
-
-	font-family: 'Poiret One', cursive;
-
+.navimg {
+  height: 1px;  /* essential! otherwise 1px indent from pic & background */
+  width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 0 4.5%;
+     
+}
+    
+.navlist {
+  text-align: center; /*essential*/
 }
 
 
 
-.nav {
-
-	color: orange;
-
-	text-align: center;
-
-	xborder: 1px solid black; /* verandert height */
-
-	background-color: white;
-
-	display: fixed;
-
+.navlist li {
+  color: orange;
+  background: transparent;  
+  display: inline-block;
+  text-align: center;
+  padding: 0 5%;
+  margin: 0;
+  /*position: fixed; werkt niet! alles klapt ineen*/
 }
 
 
+.navlist a {
+  text-decoration: none;
+  color: orange;
+}
 
-.nav a {
+.navlist a:hover, .navlist a:visited:hover {
+  color: lightblue;
+}
 
-	text-decoration: none;
-
-	color: orange;
-
+.navlist a:visited {
+  text-decoration: none;
+  color: orange;
 }
 
 
-
-.nav a:hover {
-
-	color: lightblue;
-
-}
-
-
-
-.nav a:visited {
-
-	text-decoration: none;
-
-	color: white;
+#gallerylist {
+  display: none;
+  position: absolute; /* essential! gallerylist komt nu onder gallery te staan */
+  top: 12%; /* essential */
+  left: 13%; /* essential */  
+  font-size: 20px;
+  padding: 0;
+  margin: 0 0 0 2.5%;
+  width: 20px; /* essential */
 
 }
 
-
-
-.nav ul li {
-
-	color: orange;
-
-	xborder: 1px solid red;
-
-	display: inline-block;
-
-	text-align: center;
-
-	padding: 0 5%;
-
-	margin: 0;
+.gallerylist li {
+  /* position: relative; icm top werkt niet */
+  width: 50%;
 
 }
+
 
 
 .flex-parent {
@@ -169,7 +164,7 @@ a { color: inherit; }
 
 /* The mask */
 
-.mask{
+/*.mask{
   position: fixed;
   top: 0;
   left: 0;
@@ -182,7 +177,7 @@ a { color: inherit; }
   opacity: 0;
   
   transition: 0.7s;
-}
+} */
 
 /* Modal */
 
@@ -223,82 +218,25 @@ a { color: inherit; }
   transform: translateY(0);
 }
 
-
-
 .footer {
-
-	color: white;
-
-	font-size: 24px;
-
-	font-weight: bold;
-
-	background-color: #ff8000;
-
-	xfloat: left;
-
-	xclear: both;
-
-	width: 100%;
-
-	height: 100px;
-
-	xborder: 1px solid red;
-
-	margin: 0;
-
-	padding: 0 0 0 20%;
-
-	xposition: fixed;
-
-	line-height: 0;
-
-
-
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ff8000;
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  padding: 0 0 0 20%;
+  
 }
 
-
+.footer p {
+  margin: 0;
+}
 
 .footer div {
-
-	xborder: 1px solid purple;
-
-	display: inline-block;
-
-	margin: 0;
-
-	padding: 0 10%;
-
-
-
+  display: inline-block;
+  margin: 1% 0 0 0;
+  padding: 0 10%;
+  
 }
-
-
-
-/*
-
-sticky footer from css-tricks.com
-
-.page-wrap {
-
-  min-height: 100%;
-
-  xequal to footer height
-
-  margin-bottom: -142px; 
-
-}
-
-.page-wrap:after {
-
-  content: "";
-
-  display: block;
-
-}
-
-.site-footer, .page-wrap:after {
-
-  height: 142px; 
-
-}*/
