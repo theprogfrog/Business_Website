@@ -1,0 +1,189 @@
+body {
+	margin: 0;
+	display: block;
+	box-sizing: border-box; /*de border wordt meegerekend in breedte etc */
+	overflow-x: hidden; /*zodat er geen scrollbar onder verschijnt */
+	xfont-family: 'Quicksand', sans-serif;
+	font-family: 'Poiret One', cursive;
+}
+
+/*navbar start*/
+.nav {
+	color: orange;
+	text-align: center;
+	xborder: 1px solid black; /* verandert height */
+	background-color: white;
+	display: fixed;
+}
+
+.nav a {
+	text-decoration: none;
+	color: orange;
+}
+
+.nav a:hover {
+	color: lightblue;
+}
+
+.nav a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.nav ul li {
+	color: orange;
+	xborder: 1px solid red;
+	display: inline-block;
+	text-align: center;
+	padding: 0 5%;
+	margin: 0;
+}
+/*Navbar end*/
+
+/*Gallery start*/
+.gallery {
+	background-color: #ffff99;
+}
+
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-direction: row
+}
+
+.photoContainer {
+	flex: 1;
+	position: relative;
+}
+
+.photo {
+	width: 300px;
+	height: 200px;
+	margin: 15px 30px;
+	border-radius: 8px;
+}
+
+/*This is ugly, but it won't work any other way... 
+IDs for the text hovering over the image*/
+#text1 {
+	display: none;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	width: 294px;
+	border-radius: 8px;
+	margin: 15px 40px 18px 30px;
+	padding: 3px;
+}
+
+#text2 {
+	display: none;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	width: 294px;
+	border-radius: 8px;
+	margin: 15px 40px 18px 30px;
+	padding: 3px;
+}
+
+#text3 {
+	display: none;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	width: 294px;
+	border-radius: 8px;
+	margin: 15px 40px 18px 30px;
+	padding: 3px;
+}
+
+#text4 {
+	display: none;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	width: 294px;
+	border-radius: 8px;
+	margin: 15px 40px 18px 30px;
+	padding: 3px;
+}
+
+#text5 {
+	display: none;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	width: 294px;
+	border-radius: 8px;
+	margin: 15px 40px 18px 30px;
+	padding: 3px;
+}
+
+#text6 {
+	display: none;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	width: 294px;
+	border-radius: 8px;
+	margin: 15px 40px 18px 30px;
+	padding: 3px;
+}
+/*Gallery end*/
+
+/*Footer start*/
+.footer {
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #ff8000;
+	xfloat: left;
+	xclear: both;
+	width: 100%;
+	height: 100px;
+	xborder: 1px solid red;
+	margin: 0;
+	padding: 0 0 0 20%;
+	xposition: fixed;
+	line-height: 0;
+
+}
+
+.footer div {
+	xborder: 1px solid purple;
+	display: inline-block;
+	margin: 0;
+	padding: 0 10%;
+
+}
+/*Footer end*/
+
+/*
+sticky footer from css-tricks.com
+.page-wrap {
+  min-height: 100%;
+  xequal to footer height
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}*/
