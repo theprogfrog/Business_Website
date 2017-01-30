@@ -1,0 +1,11 @@
+{
+  "name": "pbwnode",
+  "version": "1.0.0",
+  "description": "Project Business Website node",
+  "main": "pbwnode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anonymous",
+  "license": "MIT"
+}
